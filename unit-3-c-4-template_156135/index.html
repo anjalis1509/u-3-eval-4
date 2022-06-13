@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home page</title>
+    <style>
+      #user-form {
+        border: 1px solid black;
+        width: 400px;
+        height: 350px;
+        margin: auto;
+
+      }
+      input, #user_country{
+        width: 90%;
+        height: 30px;
+        margin-top: 20px;
+        margin-left: 18px;
+      }
+      #submit{
+        width: 100px;
+        height: 30px;
+        margin-left: 130px;
+        cursor: pointer;
+        background-color: teal;
+        color: white;
+        border: none;
+        margin-top: 30px;
+      }
+      #submit:hover {
+        background-color: rgb(181, 235, 95);
+        color: black;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+      <h3>News App</h3>
+      <h3>Sign-Up</h3>
+      <h3>
+        <a href="/worldNews.html">World News</a>
+      </h3>
+    </div>
+    <div id="user-form">
+      <!-- Profile Pic, (Id:- user_pic)
+Name, (Id:- user_name)
+Email, (Id:- user_email)
+country, (Id: user_country) >> Dropdown with options "India", "China", "Newzeland", "USA", "UK.  
+** Submit button will have Id:- "submit". -->
+
+<form id="form" action="">
+  <input id="user_pic" type="url" placeholder="Image URL">
+  <br>
+  <input id="user_name" type="text" placeholder="Name">
+  <br>
+  <input id="user_email" type="email" placeholder="Email">
+  <br>
+  <select name="" id="user_country">
+    <option value="in">India</option>
+    <option value="ch">China</option>
+    <option value="nz">Newzeland</option>
+    <option value="us">USA</option>
+    <option value="uk">UK</option>
+  </select>
+  <br>
+  <button id="submit" onclick="storeData()">Submit</button>
+</form>
+    </div>
+  </body>
+</html>
+
+<script src="./scripts/index.js"></script>
